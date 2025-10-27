@@ -45,10 +45,10 @@ class TestApartmentCostCalculator(unittest.TestCase):
         expected = monthly_cost - 2500
         self.assertAlmostEqual(net_cost, expected, places=2)
     
-    def test_calculate_total_cost(self):
-        """Test total cost calculation."""
-        total = self.calculator.calculate_total_cost()
-        self.assertEqual(total, 500000)
+    def test_get_apartment_cost(self):
+        """Test apartment cost getter."""
+        cost = self.calculator.get_apartment_cost()
+        self.assertEqual(cost, 500000)
     
     def test_calculate_break_even_years(self):
         """Test break-even calculation."""
@@ -72,7 +72,6 @@ class TestApartmentCostCalculator(unittest.TestCase):
         self.assertIn('amortization_years', summary)
         self.assertIn('monthly_amortization_cost', summary)
         self.assertIn('net_monthly_cost', summary)
-        self.assertIn('total_cost', summary)
         self.assertIn('break_even_years', summary)
         
         self.assertEqual(summary['location'], "Downtown NYC")

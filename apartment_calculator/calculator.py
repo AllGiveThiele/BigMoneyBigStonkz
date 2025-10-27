@@ -52,12 +52,12 @@ class ApartmentCostCalculator:
         monthly_cost = self.calculate_monthly_cost()
         return monthly_cost - self.monthly_rent
     
-    def calculate_total_cost(self):
+    def get_apartment_cost(self):
         """
-        Calculate total cost over the amortization period.
+        Get the apartment purchase cost.
         
         Returns:
-            float: Total cost of ownership
+            float: Apartment purchase cost
         """
         return self.apartment_cost
     
@@ -91,6 +91,5 @@ class ApartmentCostCalculator:
             'amortization_years': self.amortization_years,
             'monthly_amortization_cost': monthly_cost,
             'net_monthly_cost': net_monthly_cost,
-            'total_cost': self.calculate_total_cost(),
             'break_even_years': break_even,
         }

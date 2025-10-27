@@ -34,7 +34,6 @@ def display_summary(summary):
     print("-"*60)
     print(f"Monthly Amortization Cost: {format_currency(summary['monthly_amortization_cost'])}")
     print(f"Net Monthly Cost (after rent): {format_currency(summary['net_monthly_cost'])}")
-    print(f"Total Cost: {format_currency(summary['total_cost'])}")
     
     if summary['break_even_years'] is not None:
         print(f"Break-even Period: {summary['break_even_years']:.1f} years")
