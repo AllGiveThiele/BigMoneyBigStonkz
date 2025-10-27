@@ -1,0 +1,30 @@
+{
+    "example_apartments": [
+        {
+            "name": "Downtown Apartment",
+            "apartment_cost": 500000,
+            "monthly_rent": 2500,
+            "amortization_years": 30,
+            "location": "Downtown NYC"
+        },
+        {
+            "name": "Suburban House",
+            "apartment_cost": 350000,
+            "monthly_rent": 1800,
+            "amortization_years": 25,
+            "location": "Suburban Boston"
+        },
+        {
+            "name": "Rural Property",
+            "apartment_cost": 200000,
+            "monthly_rent": 1000,
+            "amortization_years": 20,
+            "location": "Rural Vermont"
+        }
+    ],
+    "location_multipliers": {
+        "downtown": 1.3,
+        "suburban": 1.0,
+        "rural": 0.7
+    }
+}
